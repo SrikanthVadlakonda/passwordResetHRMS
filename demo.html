@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <div class="container">
+       
+            <div class="logo">
+                <img src="/hrmsdesktop/logo (1).png" height="70px" width="170px">
+
+            </div>
+            <div class="page">
+            <h1>Forgot Your Password</h1>
+            <p>input your email send you a reset password link.</p>
+    <form id="form">
+        
+        Email Adress:<input type="email" id="email" placeholder="email" required>
+        <button>SEND</button>
+        <p>Don't have an account yet? <a href="#">Login</a></p>
+    </form>
+        </div>
+    </div>
+</body>
+<script>
+    var form=document.getElementById('form')
+    form.addEventListener('submit',function(event){
+        event.preventDefault()
+
+
+        var email=document.getElementById('email').value
+        console.log(email)
+    })
+</script>
+</html>
